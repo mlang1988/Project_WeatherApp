@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            id="city-input"
+            class="search-input"
+            type="search"
+            placeholder="Enter a city.."
+            required
+          />
+          <input class="search-button" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div class="city-weather">
+            <h1 id="city">Paris</h1>
+            <p class="current-details">
+              <span id="current-time"></span>, cloudy <br />
+              Humidity: <strong id="humidity">71%</strong>, Wind:
+              <strong id="wind-speed">11.1km/h</strong>
+            </p>
+          </div>
+          <div class="current-temp">
+            <span class="current-temp-icon">☀️</span>
+            <span class="current-temp-value">14</span>
+            <span class="current-temp-unit">°C</span>
+          </div>
+        </div>
+      </main>
+
+      <footer>This project was coded by Mona Lang.</footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
